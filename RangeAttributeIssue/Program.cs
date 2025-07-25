@@ -34,5 +34,5 @@ public record Input
 {
     [Required]
     [Range(1234.56, 7891.1)]
-    public int Value { get; set; }    
+    public double Value { get; set; }    
 }
