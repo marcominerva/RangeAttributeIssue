@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,9 +11,6 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 app.UseHttpsRedirection();
-
-//app.UseExceptionHandler();
-app.UseStatusCodePages();
 
 app.MapOpenApi();
 
